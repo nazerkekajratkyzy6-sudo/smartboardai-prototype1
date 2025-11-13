@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { askAI } from './services/openaiService'; // <-- добавь это
+import { getAIResponse } from './services/aiService'; ✅ правильный путь
 
 export default function SmartBoardAI() {
   const [elements, setElements] = useState([]);
